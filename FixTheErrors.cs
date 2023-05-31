@@ -8,11 +8,9 @@ public class Program
             DoMath(10, 4);
             DoMath(20, 7);
             DoMath(30, 15);
-
-
+		}
         void DoMath (int value, int value2) {
             var number = value + value2;
             Console.WriteLine(number);
         }
-}
 }
