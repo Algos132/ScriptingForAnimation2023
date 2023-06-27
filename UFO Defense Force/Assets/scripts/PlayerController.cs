@@ -8,11 +8,11 @@ public class PlayerController : MonoBehaviour
     public float horizontalInput;
     public float xRange;
     public float speed;
-
     public Transform blaster;
     public GameObject laserBolt;
-    
+    public static float pickUpOne = 0f;
 
+    
     // Update is called once per frame
     void Update()
     {
@@ -38,12 +38,14 @@ public class PlayerController : MonoBehaviour
             //Create laserBolt at the blaster transform position. Maintaining the rotation.
             Instantiate(laserBolt, blaster.transform.position, laserBolt.transform.rotation);
         }
-
+        if (pickUpOne > 0f)
+        {
+            Debug.Log("Inventory " + pickUpOne);
+        }
+        void OnTriggerEnter(Collider other)
+        {
+            Destroy(other.gameObject);
+        }
     }
-    
-    private void OnTriggerEnter(Collider other)
-    {
-        Destroy(other.gameObject);
-    }
-    
 }
+
