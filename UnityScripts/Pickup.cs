@@ -14,7 +14,7 @@ public class Pickup : MonoBehaviour
 
     void Start()
     {
-        obj.GetComponent<Inventory>();
+        obj.GetComponent<PlayerController>();
     }
     // Update is called once per frame
     void Update()
@@ -24,8 +24,8 @@ public class Pickup : MonoBehaviour
         
         void OnTriggerEnter(Collider Player)
         {
-            Debug.Log ("Player gained" + Inventory.pickUpOne + " pickups.");
-            Inventory.pickUpOne++;
+            Debug.Log ("Pickup collected");
+            PlayerController.pickUpOne++;
             Destroy(gameObject);
         }
     }
