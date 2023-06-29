@@ -5,16 +5,17 @@ using UnityEngine;
 
 public class PickUpCollision : MonoBehaviour
 {
-    private GameObject playerInv;
+    private GameObject _playerInv;
     private void Awake()
     {
-        playerInv = GameObject.FindGameObjectWithTag("Player");
-        playerInv.GetComponent<PlayerController>();
+        _playerInv = GameObject.FindGameObjectWithTag("Player");
+        _playerInv.GetComponent<PlayerController>();
     }
 
-    private void OnTriggerEnter(Collider playerInv)
+    private void OnTriggerEnter(Collider other)
     {
+        PlayerController.pickUpOne += 1;
+        Debug.Log("Pickup added");
         Destroy(gameObject);
-        PlayerController.pickUpOne++;
     }
 }

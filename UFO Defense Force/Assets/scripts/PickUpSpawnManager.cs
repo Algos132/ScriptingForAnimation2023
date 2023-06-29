@@ -11,10 +11,10 @@ public class PickUpSpawnManager : MonoBehaviour
     private float spawnRangeX = 20f;
     private float spawnPosZ = 20f;
     private float startDelay = 2f;
-    private float spawnInterval = Random.Range(5, 15); //Spawns the pickup at random intervals between 5 and 15 seconds.
-
+    private float spawnInterval;
     private void Start()
     {
+        spawnInterval = Random.Range(5, 15); //Spawns the pickup at random intervals between 5 and 15 seconds.
         InvokeRepeating("SpawnRandomPickUp", startDelay, spawnInterval);
     }
 

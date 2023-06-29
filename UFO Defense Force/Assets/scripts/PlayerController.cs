@@ -38,10 +38,6 @@ public class PlayerController : MonoBehaviour
             //Create laserBolt at the blaster transform position. Maintaining the rotation.
             Instantiate(laserBolt, blaster.transform.position, laserBolt.transform.rotation);
         }
-        if (pickUpOne > 0f)
-        {
-            Debug.Log("Inventory " + pickUpOne);
-        }
         void OnTriggerEnter(Collider other)
         {
             Destroy(other.gameObject);
