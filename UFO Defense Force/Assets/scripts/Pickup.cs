@@ -21,12 +21,5 @@ public class Pickup : MonoBehaviour
     {
         //Move game object back
         transform.Translate(Vector3.forward * Time.deltaTime * -speed);
-        
-        void OnTriggerEnter(Collider Player)
-        {
-            Debug.Log ("Pickup collected");
-            PlayerController.pickUpOne++;
-            Destroy(gameObject);
-        }
     }
 }

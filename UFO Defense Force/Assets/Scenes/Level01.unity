@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1289668}
+  - component: {fileID: 1289669}
   m_Layer: 0
   m_Name: PickupSpawner
   m_TagString: Untagged
@@ -147,13 +148,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1289667}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.3896627, y: 0.3969741, z: 3.3920856}
+  m_LocalPosition: {x: -3.3896627, y: 0.3969741, z: 12.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1289669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2b362392ed7e95499571d0752d40a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickUpPrefabs:
+  - {fileID: 6846231893754338994, guid: a2563c9591d93024badd48a320c75f88, type: 3}
 --- !u!1 &454255717
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,7 +268,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 454255717}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.92, z: -6.63}
+  m_LocalPosition: {x: 0, y: 0.1, z: -6.63}
   m_LocalScale: {x: 5.9364905, y: 5.9364905, z: 5.9364905}
   m_ConstrainProportionsScale: 0
   m_Children: []

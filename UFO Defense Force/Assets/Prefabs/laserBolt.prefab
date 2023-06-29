@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 8133629878831400178}
   - component: {fileID: 4877215740382482485}
   - component: {fileID: 6769550892264814988}
+  - component: {fileID: 7317584157482833929}
+  - component: {fileID: 4869322203338588729}
   m_Layer: 0
   m_Name: laserBolt
   m_TagString: Untagged
@@ -121,3 +123,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 50
+--- !u!114 &7317584157482833929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263950302219124219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b18473f58c531641b972f609538da51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  topBounds: 30
+  lowerBounds: -15
+--- !u!114 &4869322203338588729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263950302219124219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a2868b45a82ce74fbf9b00f6fbe466f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

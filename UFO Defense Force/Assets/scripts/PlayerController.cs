@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public Transform blaster;
     public GameObject laserBolt;
-    public static float pickUpOne = 0f;
+    public static int pickUpOne = 0;
 
     
     // Update is called once per frame
