@@ -10,9 +10,14 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public Transform blaster;
     public GameObject laserBolt;
+    public GameManager gameManager;
     public static int pickUpOne = 0;
 
-    
+    private void Start()
+    {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -33,7 +38,7 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && GameManager.isGameOver == false)
         {
             //Create laserBolt at the blaster transform position. Maintaining the rotation.
             Instantiate(laserBolt, blaster.transform.position, laserBolt.transform.rotation);
