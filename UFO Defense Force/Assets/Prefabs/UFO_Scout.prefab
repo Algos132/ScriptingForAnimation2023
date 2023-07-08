@@ -178,3 +178,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreManager: {fileID: 0}
   scoreToGive: 100
+  clip: {fileID: 8300000, guid: 7c92a74b5d710cb43a15167596f807f2, type: 3}
