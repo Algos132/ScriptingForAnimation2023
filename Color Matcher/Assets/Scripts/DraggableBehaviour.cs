@@ -6,7 +6,7 @@ public class DraggableBehaviour : MonoBehaviour
     private Camera cameraObj;
     public bool draggable;
     public Vector3 position, offset;
-    public UnityEvent startDragEvent, endDragEvent;
+    public UnityEvent startDragEvent, endDragEvent, resetPositionEvent;
     void Start()
     {
         cameraObj = Camera.main;
@@ -20,6 +20,7 @@ public class DraggableBehaviour : MonoBehaviour
         draggable = true;
 
         startDragEvent.Invoke();
+
         while(draggable)
         {
             yield return new WaitForFixedUpdate();
@@ -33,5 +34,10 @@ public class DraggableBehaviour : MonoBehaviour
         draggable = false;
 
         endDragEvent.Invoke();
+    }
+
+    public void ResetEvent()
+    {
+        transform.position = Vector3.zero;
     }
 }

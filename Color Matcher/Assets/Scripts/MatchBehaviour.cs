@@ -19,7 +19,7 @@ public class MatchBehavior : MonoBehaviour
         {
             matchEvent.Invoke();
         }
-        else
+        else if (otherID != idObj)
         {
             noMatchEvent.Invoke();
             yield return new WaitForSeconds(0.5f);
