@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: -5343238764526708033}
   - component: {fileID: -6227888964825075207}
   - component: {fileID: -4588219207454763986}
-  - component: {fileID: 570178374863587824}
-  m_Layer: 7
-  m_Name: Ring
+  - component: {fileID: -342658259394710601}
+  m_Layer: 6
+  m_Name: Dot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1624274705, guid: 7c5aaa7a34a0d9b4aa00eab0b91fc1b8, type: 3}
+  m_Sprite: {fileID: 558404076, guid: 7c5aaa7a34a0d9b4aa00eab0b91fc1b8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -196,7 +196,7 @@ MonoBehaviour:
   disableEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &570178374863587824
+--- !u!114 &-342658259394710601
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -205,23 +205,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 7854938146497704801}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f98334f5a88b6e74d8fceeb4b962a803, type: 3}
+  m_Script: {fileID: 11500000, guid: 36872752f5147e640a88727e0fb41e00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idObj: {fileID: 11400000, guid: 33e899d9e5bc8b74f838a92a7bf3f516, type: 2}
-  startEvent:
+  idObj: {fileID: 0}
+  matchEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: dbf49815a185e464289604a446d03c50, type: 2}
-        m_TargetAssemblyTypeName: ColorIDDataList, Assembly-CSharp
-        m_MethodName: SetCurrentColorRandomly
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  noMatchEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  noMatchDelayedEvent:
+    m_PersistentCalls:
+      m_Calls: []
   colorIDDataListObj: {fileID: 11400000, guid: dbf49815a185e464289604a446d03c50, type: 2}
